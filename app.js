@@ -10,15 +10,23 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
 const controller = Botkit.slackbot({});
-
 controller.spawn({
-	token: 'xoxb-258186438503-ZAqXHKdY1WW5B3y94gGtoAwU'
+	token: 'xoxb-258186438503-iJ23BjLgol3gGNXLhOZFJIbj'
+
 }).startRTM();
 
+
 controller.hears('hello',    ['direct_message','direct_mention','mention'],function(bot,message) {
-	console.log("heard something")
+	console.log("heard hello")
     bot.reply(message,'Hello yourself.');
 });
+
+controller.on(['direct_message','direct_mention','mention'], function(bot,message) {
+	console.log("heard something")
+    bot.reply(message,'Hi.');
+});
+
+
 
 app.get('/', function (req, res) {
   res.sendFile('/index.html')

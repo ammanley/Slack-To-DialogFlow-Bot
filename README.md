@@ -1,6 +1,8 @@
 # Slack-To-DialogFlow-Bot
 
-This simple bot is setup to act as a midpoint between a Slack "Bot" User, and a DialogFlow Agent. By simply setting the appropriate APIAI_KEY and SLACK_API_KEY in your development/deployment environment, you can get started chatting with your "Bot Users" powered by a DialogFlow agent (there are many sample Agents, or you can use your own). Currently, DialogFlow supports easy 1-click integration between Slack workspaces, so if you're just looking for that you might not have to go through any of this. Having a backend like this allows you to use other services with more complicated setups, and/or do interesting things with the messages and responses beyond what the NLP "AIs" return - that might include simple logging of all queries, or powering a food-delivery system that your users use a Bot to interact with! 
+This simple bot is setup to act as a midpoint between a Slack "Bot" User, and a DialogFlow Agent. By simply setting the appropriate APIAI_KEY and SLACK_API_KEY in your development/deployment environment, you can get started chatting with your "Bot Users" powered by a DialogFlow agent (there are many sample Agents, or you can use your own). 
+
+Currently, DialogFlow supports easy 1-click integration between Slack workspaces, so if you're just looking for that you might not have to go through any of this. Having a backend like this allows you to use other services with more complicated setups, and/or do interesting things with the messages and responses beyond what the NLP "AIs" return - that might include simple logging of all queries, or powering a food-delivery system that your users use a Bot to interact with! 
 
 NOTE: This is NOT for a "Slack App" with the OAuth 2.0 dance - if you want to create a bot you can deploy to all of Slack, you'll need to make a number of modifications and better know what you're doing. 
 

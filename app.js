@@ -1,7 +1,6 @@
 'use strict'
 
 const express = require('express');
-const bodyParser = require('body-parser');
 const path = require('path');
 const request = require('request');
 const Botkit = require('botkit');
@@ -10,8 +9,6 @@ const ai = apiai(process.env.APIAI_KEY);
 const app = express();
 
 // --- App configurations
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
 // --- Initialize/authenticate Slack communications
